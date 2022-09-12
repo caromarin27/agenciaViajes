@@ -9,7 +9,7 @@ db.authenticate()
   .then( () => console.log('Base de datos conectada'))
   .catch(error => console.log(error));
 
-const port = process.env.DB_HOST || 4000;
+const port = process.env.PORT || 4000;
 
 // Habilitar pug
 app.set('view engine', 'pug');
